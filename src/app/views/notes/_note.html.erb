@@ -1,0 +1,6 @@
+  <h3 class="uk-card-title"><%= note.title %><a class="uk-padding" href="<%=edit_note_path(note)%>"><span uk-icon="icon: pencil"></span></a></h3> 
+  <p> <%= note.description %></p>
+  <p class="uk-text-meta"> <%= note.created_at %></p>
+  
+  <%= button_to "Delete note", note, method: :delete %>
+  

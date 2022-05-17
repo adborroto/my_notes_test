@@ -1,0 +1,14 @@
+
+<div class="uk-vertical-align-middle center uk-margin">
+    <%= form_tag '/login', class: 'uk-panel uk-panel-box uk-form' do %>
+        <p style="color: red"><%= notice %></p>
+        
+        <div class="uk-form-row uk-margin">
+            <%= text_field_tag :username, nil, placeholder: 'Username', class: 'uk-width-1-1 uk-input' %>
+        </div>
+        <div class="uk-form-row uk-margin">
+            <%= password_field_tag :password, nil, placeholder: 'Password', class: 'uk-width-1-1 uk-input' %>
+        </div>
+        <%= submit_tag 'Login', class: 'uk-width-1-1 uk-button uk-button-primary uk-button'  %>
+    <% end %>  
+</div>
